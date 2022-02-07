@@ -7,6 +7,7 @@ body {
   line-height: 160%;
   font-size: 16px;
   color: #363636;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -68,7 +69,7 @@ body {
 @media (min-width: 768px) {
   .personal {
     font-size: 40px;
-    margin: 10px 0 0 -25px;
+    margin: 5px 0 0 25px;
   }
 }
 
@@ -174,6 +175,7 @@ body {
   .personalOne {
     font-size: 30px;
     margin-left: 10px;
+    margin-top: -0.1px;
   }
 }
 
