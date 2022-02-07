@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "fontMimos";
+  src: url("BANANASP.TTF");
+}
+body {
+  font-family: "Arial", Helvetica, sans-serif;
+  line-height: 160%;
+  font-size: 16px;
+  color: #363636;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.begin {
+  background-color: #FFEBF1;
+  display: flex;
+}
+.begin img {
+  width: 50px;
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .begin img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .begin img {
+    width: 220px;
+  }
+}
+
+.titleOne {
+  font-family: "fontMimos";
+  margin: auto;
+  color: #f47ab6;
+  font-size: 35px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .titleOne {
+    font-size: 55px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .titleOne {
+    font-size: 125px;
+    padding: 80px;
+  }
+}
+
+.personal {
+  font-family: "Arial", Helvetica, sans-serif;
+  color: #363636;
+  font-size: 25px;
+  margin-left: -15px;
+}
+
+@media (min-width: 768px) {
+  .personal {
+    font-size: 40px;
+    margin: 10px 0 0 -25px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .personal {
+    font-size: 85px;
+    margin: 40px 0 0 63px;
+  }
+}
+
+.sectionCaneca {
+  margin: 30px 10px 30px 10px;
+}
+
+@media (min-width: 768px) {
+  .sectionCaneca {
+    display: flex;
+    justify-content: center;
+    margin: 40px 15px 40px 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .sectionCaneca {
+    margin: 150px 30px 100px 30px;
+  }
+}
+
+.backFirst {
+  width: 135px;
+  height: 135px;
+  background-color: #FFEBF1;
+  border-radius: 50%;
+  margin: auto auto 15px auto;
+}
+.backFirst img {
+  width: 115px;
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .backFirst {
+    width: 200px;
+    height: 200px;
+    margin: 0 80px 40px 15px;
+  }
+  .backFirst img {
+    width: 150px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .backFirst {
+    width: 500px;
+    height: 500px;
+    margin: 70px 80px 0 15px;
+  }
+  .backFirst img {
+    width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .textCaneca {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .textCaneca {
+    max-width: 750px;
+  }
+}
+
+.titleS {
+  font-family: "fontMimos";
+  text-align: center;
+  margin: auto auto 15px auto;
+  color: #f47ab6;
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .titleS {
+    display: flex;
+    font-size: 43px;
+  }
+}
+@media (min-width: 1600px) {
+  .titleS {
+    font-size: 80px;
+  }
+}
+.personalOne {
+  font-family: "Arial", Helvetica, sans-serif;
+  color: #363636;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .personalOne {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .personalOne {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .textCanecaTwo {
+    line-height: 30px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .textCanecaTwo {
+    line-height: 70px;
+    font-size: 40px;
+    margin: 50px 0 0 20px;
+  }
+}
+
+.mug {
+  text-align: center;
+  margin: 30px 10px 30px 10px;
+  display: grid;
+  grid-template-areas: "one two" "three four" "five six";
+  grid-template-columns: 49.5% 49.5%;
+  grid-gap: 10px;
+}
+.mug p {
+  font-weight: bold;
+  line-height: 20px;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .mug {
+    margin: 40px 15px 40px 15px;
+    grid-template-columns: 32.3% 32.3% 32.3%;
+    grid-template-rows: 50% 50%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mug {
+    margin: 0 30px 150px 30px;
+    grid-template-columns: 32.8% 32.8% 32.8%;
+    font-size: 35px;
+  }
+  .mug p {
+    line-height: 30px;
+  }
+}
+
+.card {
+  background: #ffff;
+  box-shadow: #c0b5b5 4px 4px 8px, #a59d9d -4px -4px 8px;
+}
+
+.mugCer {
+  width: 120px;
+}
+
+@media (min-width: 768px) {
+  .mugCer {
+    width: 130px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mugCer {
+    width: 230px;
+    margin-bottom: 20px;
+  }
+}
+
+.mugJat {
+  width: 90px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .mugJat {
+    margin: 30px 0 8px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mugJat {
+    width: 180px;
+    margin: 20px 0 23px 0;
+  }
+}
+
+.mugAcri {
+  width: 115px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .mugAcri {
+    width: 125px;
+    margin: 23px 0 15px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mugAcri {
+    width: 230px;
+    margin-top: 23px;
+  }
+}
+
+.mugAlum {
+  width: 120px;
+}
+
+@media (min-width: 768px) {
+  .mugAlum {
+    width: 130px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mugAlum {
+    width: 230px;
+    margin-bottom: 22px;
+  }
+}
+
+.mugPolim {
+  width: 98px;
+  padding: 20px 0 5px 0;
+}
+
+@media (min-width: 768px) {
+  .mugPolim {
+    padding: 30px 0 15px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mugPolim {
+    width: 180px;
+    padding: 40px 0 25px 0;
+  }
+}
+
+.mugTerm {
+  width: 100px;
+}
+
+@media (min-width: 1600px) {
+  .mugTerm {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+}
