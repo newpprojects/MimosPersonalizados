@@ -83,12 +83,12 @@ body {
   }
 }
 
-.sectionCaneca {
+.sectionCaneca, .sectionGift, .sectionSqueeze {
   margin: 30px 10px 30px 10px;
 }
 
 @media (min-width: 768px) {
-  .sectionCaneca {
+  .sectionCaneca, .sectionGift, .sectionSqueeze {
     display: flex;
     justify-content: center;
     margin: 60px 15px 40px 15px;
@@ -96,42 +96,42 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .sectionCaneca {
+  .sectionCaneca, .sectionGift, .sectionSqueeze {
     margin: 150px 30px 100px 30px;
   }
 }
 
-.backFirst {
+.backFirst, .backFirst1 {
   width: 135px;
   height: 135px;
   background-color: #FFEBF1;
   border-radius: 50%;
   margin: auto auto 15px auto;
 }
-.backFirst img {
+.backFirst img, .backFirst1 img {
   width: 115px;
   padding: 8px;
 }
 
 @media (min-width: 768px) {
-  .backFirst {
+  .backFirst, .backFirst1 {
     width: 200px;
     height: 200px;
     margin: 0 80px 40px 15px;
   }
-  .backFirst img {
+  .backFirst img, .backFirst1 img {
     width: 150px;
     padding: 20px;
   }
 }
 
 @media (min-width: 1600px) {
-  .backFirst {
+  .backFirst, .backFirst1 {
     width: 500px;
     height: 500px;
     margin: 70px 80px 0 15px;
   }
-  .backFirst img {
+  .backFirst img, .backFirst1 img {
     width: 450px;
   }
 }
@@ -148,7 +148,7 @@ body {
   }
 }
 
-.titleS {
+.titleS, .titleSqueeze {
   font-family: "fontMimos";
   text-align: center;
   margin: auto auto 15px auto;
@@ -158,13 +158,13 @@ body {
 }
 
 @media (min-width: 768px) {
-  .titleS {
+  .titleS, .titleSqueeze {
     display: flex;
     font-size: 43px;
   }
 }
 @media (min-width: 1600px) {
-  .titleS {
+  .titleS, .titleSqueeze {
     font-size: 80px;
   }
 }
@@ -193,6 +193,7 @@ body {
   .textCanecaTwo {
     line-height: 30px;
     font-size: 18px;
+    margin-left: 10px;
   }
 }
 
@@ -204,7 +205,7 @@ body {
   }
 }
 
-.mug {
+.mug, .gifts, .squeeze {
   text-align: center;
   margin: 30px 10px 30px 10px;
   display: grid;
@@ -212,7 +213,7 @@ body {
   grid-template-columns: 49.5% 49.5%;
   grid-gap: 10px;
 }
-.mug p {
+.mug p, .gifts p, .squeeze p {
   font-weight: bold;
   line-height: 20px;
   padding: 8px;
@@ -220,7 +221,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .mug {
+  .mug, .gifts, .squeeze {
     margin: 40px 15px 40px 15px;
     grid-template-columns: 32.3% 32.3% 32.3%;
     grid-template-rows: 50% 50%;
@@ -229,12 +230,12 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .mug {
-    margin: 0 30px 150px 30px;
+  .mug, .gifts, .squeeze {
+    margin: 0 80px 150px 80px;
     grid-template-columns: 32.8% 32.8% 32.8%;
     font-size: 35px;
   }
-  .mug p {
+  .mug p, .gifts p, .squeeze p {
     line-height: 30px;
   }
 }
@@ -262,7 +263,7 @@ body {
   }
 }
 
-.mugJat {
+.mugJat, .giftMug, .cards, .badge, .champGlass, .ginGlass {
   width: 90px;
   margin-top: 10px;
 }
@@ -274,7 +275,7 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .mugJat {
+  .mugJat, .candy, .calendar, .giftMug, .cards, .keychain, .badge, .souvenir, .longDrink, .partySupp, .champGlass, .ginGlass, .cupString, .maternSouvenir {
     width: 180px;
     margin: 20px 0 23px 0;
   }
@@ -293,7 +294,7 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .mugAcri {
+  .mugAcri, .calendar {
     width: 230px;
     margin-top: 23px;
   }
@@ -343,5 +344,405 @@ body {
   .mugTerm {
     width: 180px;
     margin-bottom: 10px;
+  }
+}
+
+.giftImg {
+  width: 100px !important;
+  padding: 10px !important;
+}
+
+@media (min-width: 768px) {
+  .giftImg {
+    width: 150px !important;
+    padding: 10px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .giftImg {
+    width: 400px !important;
+    padding: 20px 10px 10px 40px !important;
+  }
+}
+
+.gifts {
+  grid-template-areas: "one2 two2" "three2 four2" "five2 six2" "seven2 eight2" "nine2 ten2" "eleven2 twelve2" "thirteen2 fourteen2";
+}
+.gifts p {
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .gifts {
+    grid-template-areas: "one2 two2 three2" "four2 five2 six2" "seven2 eight2 nine2" "ten2 eleven2 twelve2" "thirteen2 fourteen2 .";
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .gifts p {
+    padding: 50px;
+  }
+}
+
+.bucket {
+  width: 115px;
+}
+
+@media (min-width: 768px) {
+  .bucket {
+    width: 130px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .bucket {
+    width: 250px;
+    margin: 20px 0 0 0;
+  }
+}
+
+.candy {
+  margin-top: 20px;
+  width: 110px;
+}
+
+@media (min-width: 768px) {
+  .candy {
+    width: 140px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .candy {
+    width: 290px;
+    margin: 40px 0 45px 0;
+  }
+}
+
+.calendar {
+  width: 135px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .calendar {
+    width: 170px;
+    margin: 20px 0 30px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .calendar {
+    width: 340px;
+    margin: 40px 0 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .giftMug {
+    width: 130px;
+    margin: 15px 0 15px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .giftMug {
+    width: 240px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards {
+    width: 110px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .cards {
+    width: 220px;
+    margin: 0;
+  }
+}
+
+.keychain {
+  width: 115px;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .keychain {
+    width: 130px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .keychain {
+    width: 240px;
+    margin-bottom: 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .badge {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .badge {
+    width: 140px;
+    margin-bottom: 7px;
+  }
+}
+
+.souvenir {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .souvenir {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .souvenir {
+    width: 210px;
+    margin: 5px 0 5px 0;
+  }
+}
+
+.longDrink {
+  width: 110px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .longDrink {
+    width: 160px;
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .longDrink {
+    width: 260px;
+  }
+}
+
+.partySupp {
+  width: 100px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .partySupp {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .partySupp {
+    width: 240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .champGlass {
+    width: 130px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .champGlass {
+    width: 230px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ginGlass {
+    width: 120px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .ginGlass {
+    width: 220px;
+    margin-bottom: 0;
+  }
+}
+
+.cupString {
+  width: 100px;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .cupString {
+    width: 130px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .cupString {
+    width: 230px;
+    margin: 30px 0 10px 0;
+  }
+}
+
+.maternSouvenir {
+  width: 100px;
+  margin-top: 1px;
+}
+
+@media (min-width: 768px) {
+  .maternSouvenir {
+    width: 130px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .maternSouvenir {
+    width: 230px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sectionSqueeze {
+    margin-top: 120px;
+  }
+}
+
+.backFirst1 img {
+  width: 95px;
+  padding: 16px;
+}
+
+@media (min-width: 768px) {
+  .backFirst1 img {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .backFirst1 img {
+    width: 370px;
+    padding-left: 52px;
+  }
+}
+
+@media (min-width: 768px) {
+  .titleSqueeze {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .titleSqueeze {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .squeeze p {
+    padding: 50px;
+  }
+}
+
+.alumSqueeze {
+  width: 120px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .alumSqueeze {
+    width: 130px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .alumSqueeze {
+    width: 220px;
+  }
+}
+
+.towelSqueeze {
+  width: 120px;
+}
+
+@media (min-width: 768px) {
+  .towelSqueeze {
+    width: 130px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .towelSqueeze {
+    width: 220px;
+  }
+}
+
+.thermosBottle {
+  width: 120px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .thermosBottle {
+    width: 127px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .thermosBottle {
+    width: 216px;
+  }
+}
+
+.acquaSqueeze {
+  width: 110px;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .acquaSqueeze {
+    width: 125px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .acquaSqueeze {
+    width: 210px;
+    margin-top: 10px;
+  }
+}
+
+.scholarSqueeze {
+  width: 110px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .scholarSqueeze {
+    width: 125px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .scholarSqueeze {
+    width: 220px;
   }
 }

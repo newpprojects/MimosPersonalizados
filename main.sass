@@ -84,20 +84,20 @@ body
         font-size: 85px
         margin: 70px 0 0 63px
 
-.sectionCaneca
+.sectionCaneca, .sectionGift, .sectionSqueeze
     margin: 30px 10px 30px 10px
 
-.sectionCaneca
+.sectionCaneca, .sectionGift, .sectionSqueeze
     @include breakpoint (medium)
         display: flex
         justify-content: center
         margin: 60px 15px 40px 15px
 
-.sectionCaneca
+.sectionCaneca, .sectionGift, .sectionSqueeze
     @include breakpoint (large)
         margin: 150px 30px 100px 30px
 
-.backFirst
+.backFirst, .backFirst1
     width: 135px
     height: 135px
     background-color: $second
@@ -107,7 +107,7 @@ body
         width: 115px
         padding: 8px
 
-.backFirst
+.backFirst, .backFirst1
     @include breakpoint (medium)
         width: 200px
         height: 200px 
@@ -116,7 +116,7 @@ body
             width:150px
             padding: 20px  
 
-.backFirst
+.backFirst, .backFirst1
     @include breakpoint (large)
         width: 500px
         height: 500px 
@@ -132,7 +132,7 @@ body
     @include breakpoint (large)
         max-width: 750px
     
-.titleS
+.titleS, .titleSqueeze
     font-family: 'fontMimos'
     text-align: center
     margin: auto auto 15px auto
@@ -141,12 +141,12 @@ body
     line-height: 2px
 
 @include breakpoint(medium)
-    .titleS
+    .titleS, .titleSqueeze
         display: flex
         font-size: 43px
 
 @include breakpoint(large)
-    .titleS
+    .titleS, .titleSqueeze
         font-size: 80px
 
 .personalOne
@@ -169,6 +169,7 @@ body
     @include breakpoint(medium)
         line-height: 30px
         font-size: 18px
+        margin-left: 10px
 
 .textCanecaTwo
     @include breakpoint(large)
@@ -176,7 +177,7 @@ body
         font-size: 40px
         margin: 50px 0 0 20px
 
-.mug
+.mug, .gifts, .squeeze
     // align-itens: center
     text-align: center
     margin: 30px 10px 30px 10px
@@ -190,16 +191,16 @@ body
         padding: 8px
         margin-bottom: 5px
 
-.mug
+.mug, .gifts, .squeeze
     @include breakpoint (medium)
         margin: 40px 15px 40px 15px
         grid-template-columns: 32.3% 32.3% 32.3%
         grid-template-rows: 50% 50%
         font-size: 16px
 
-.mug
+.mug, .gifts, .squeeze
     @include breakpoint (large)
-        margin: 0 30px 150px 30px
+        margin: 0 80px 150px 80px
         grid-template-columns: 32.8% 32.8% 32.8%
         font-size: 35px
         p 
@@ -212,17 +213,17 @@ body
 .mugCer 
     width: 120px 
    
-.mugCer 
+.mugCer
     @include breakpoint (medium)
         width: 130px 
         margin-top: 20px
 
-.mugCer 
+.mugCer  
     @include breakpoint (large)
         width: 230px 
         margin-bottom: 20px
 
-.mugJat
+.mugJat, .giftMug, .cards, .badge, .champGlass, .ginGlass
     width: 90px
     margin-top: 10px
 
@@ -230,7 +231,7 @@ body
     @include breakpoint (medium)
         margin: 30px 0 8px 0
 
-.mugJat
+.mugJat, .candy, .calendar, .giftMug, .cards, .keychain, .badge, .souvenir, .longDrink, .partySupp, .champGlass, .ginGlass, .cupString, .maternSouvenir
     @include breakpoint (large)
         width: 180px
         margin: 20px 0 23px 0
@@ -244,7 +245,7 @@ body
         width: 125px
         margin: 23px 0 15px 0
 
-.mugAcri
+.mugAcri, .calendar
     @include breakpoint (large)
         width: 230px
         margin-top: 23px
@@ -282,3 +283,293 @@ body
     @include breakpoint (large)
        width: 180px 
        margin-bottom: 10px
+
+.giftImg
+    width: 100px !important
+    padding: 10px !important
+
+.giftImg
+    @include breakpoint (medium)
+        width: 150px !important
+        padding: 10px !important
+
+.giftImg
+    @include breakpoint (large)
+        width: 400px !important
+        padding: 20px 10px 10px 40px !important
+
+.gifts
+    grid-template-areas: "one2 two2" "three2 four2" "five2 six2" "seven2 eight2" "nine2 ten2" "eleven2 twelve2" "thirteen2 fourteen2"
+    p
+        padding: 0
+.gifts
+    @include breakpoint(medium)
+        grid-template-areas: "one2 two2 three2" "four2 five2 six2" "seven2 eight2 nine2" "ten2 eleven2 twelve2" "thirteen2 fourteen2 ."
+        grid-template-rows: 20% 20% 20% 20% 20%
+        margin-bottom: 60px
+
+.gifts
+    @include breakpoint(large)
+        p
+            padding: 50px
+
+.bucket
+    width: 115px
+
+.bucket
+    @include breakpoint (medium)
+        width: 130px
+        margin: 20px 0 20px 0
+
+.bucket
+    @include breakpoint (large)
+        width: 250px
+        margin: 20px 0 0 0
+
+.candy
+    margin-top: 20px
+    width: 110px
+
+.candy
+    @include breakpoint (medium)
+        width: 140px
+        margin-bottom: 40px
+
+.candy
+    @include breakpoint (large)
+        width: 290px
+        margin: 40px 0 45px 0
+
+.calendar
+    width: 135px
+    margin-top: 10px
+
+.calendar
+    @include breakpoint (medium)
+        width: 170px
+        margin: 20px 0 30px 0
+
+.calendar
+    @include breakpoint (large)
+        width: 340px
+        margin: 40px 0 20px 0
+
+.giftMug
+    @include breakpoint (medium)
+        width: 130px
+        margin: 15px 0 15px 0
+
+.giftMug
+    @include breakpoint (large)
+        width: 240px
+        margin: 20px 0 20px 0
+
+.cards
+    @include breakpoint (medium)
+        width: 110px
+        margin-top: 20px
+
+.cards
+    @include breakpoint (large)
+        width: 220px
+        margin: 0
+
+.keychain
+    width: 115px
+    margin-top: 15px
+
+.keychain
+    @include breakpoint (medium)
+        width: 130px
+
+.keychain
+    @include breakpoint (large)
+        width: 240px
+        margin-bottom: 1px
+
+.badge
+    @include breakpoint (medium)
+        margin: 10px 0 0 0
+
+.badge
+    @include breakpoint (large)
+        width: 140px
+        margin-bottom: 7px
+
+.souvenir
+    width: 120px
+    margin-bottom: 10px
+
+.souvenir
+    @include breakpoint (medium)
+        margin-top: 10px
+
+.souvenir
+    @include breakpoint (large)
+        width: 210px
+        margin: 5px 0 5px 0
+
+.longDrink
+    width: 110px
+    margin-top: 10px
+
+.longDrink
+    @include breakpoint (medium)
+        width: 160px
+        margin: 10px 0 0 0
+
+.longDrink
+    @include breakpoint (large)
+        width: 260px
+
+.partySupp
+    width: 100px
+    margin-top: 10px
+
+.partySupp
+    @include breakpoint (medium)
+        width: 140px
+
+.partySupp
+    @include breakpoint (large)
+        width: 240px
+
+.champGlass
+    @include breakpoint (medium)
+        width: 130px
+        margin-top: 15px
+
+.champGlass
+    @include breakpoint (large)
+        width: 230px
+
+.ginGlass
+    @include breakpoint (medium)
+        width: 120px
+        margin-top: 0
+
+.ginGlass
+    @include breakpoint (large)
+        width: 220px
+        margin-bottom: 0
+
+.cupString
+    width: 100px
+    margin-top: 15px
+
+.cupString
+    @include breakpoint (medium)
+        width: 130px
+        margin: 20px 0 10px 0
+
+.cupString
+    @include breakpoint (large)
+        width: 230px
+        margin: 30px 0 10px 0
+
+.maternSouvenir
+    width: 100px
+    margin-top: 1px
+
+.maternSouvenir
+    @include breakpoint (medium)
+        width: 130px
+        margin-bottom: 15px
+
+.maternSouvenir
+    @include breakpoint (large)
+        width: 230px
+        margin-bottom: 15px
+
+.sectionSqueeze
+    @include breakpoint (medium)
+        margin-top: 120px
+
+.backFirst1
+    img
+        width: 95px
+        padding: 16px
+
+.backFirst1
+    @include breakpoint (medium)
+        img
+            width: 140px
+
+.backFirst1
+    @include breakpoint (large)
+        img
+            width: 370px
+            padding-left: 52px
+
+.titleSqueeze
+    @include breakpoint (medium)
+        margin-top: 30px
+
+.titleSqueeze
+    @include breakpoint (large)
+        margin-top: 150px
+
+.squeeze
+    @include breakpoint(large)
+        p
+            padding: 50px
+.alumSqueeze
+    width: 120px
+    margin-top: 10px
+
+.alumSqueeze
+    @include breakpoint(medium)
+        width: 130px
+
+.alumSqueeze
+    @include breakpoint(large)
+        width: 220px
+
+.towelSqueeze
+    width: 120px
+
+.towelSqueeze
+    @include breakpoint(medium)
+        width: 130px
+
+.towelSqueeze
+    @include breakpoint(large)
+        width: 220px
+
+.thermosBottle
+    width: 120px
+    margin-top: 10px
+
+.thermosBottle
+    @include breakpoint(medium)
+        width: 127px
+
+.thermosBottle
+    @include breakpoint(large)
+        width: 216px
+
+.acquaSqueeze
+    width: 110px
+    margin-top: 5px
+
+.acquaSqueeze
+    @include breakpoint(medium)
+        width: 125px
+
+.acquaSqueeze
+    @include breakpoint(large)
+        width: 210px
+        margin-top: 10px
+
+.scholarSqueeze
+    width: 110px
+    margin-top: 10px
+
+.scholarSqueeze
+    @include breakpoint(medium)
+        width: 125px
+        
+.scholarSqueeze
+    @include breakpoint(large)
+        width: 220px
+        
