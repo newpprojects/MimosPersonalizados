@@ -83,12 +83,12 @@ body {
   }
 }
 
-.sectionCaneca, .sectionGift, .sectionSqueeze {
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper {
   margin: 30px 10px 30px 10px;
 }
 
 @media (min-width: 768px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper {
     display: flex;
     justify-content: center;
     margin: 60px 15px 40px 15px;
@@ -96,7 +96,7 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper {
     margin: 150px 30px 100px 30px;
   }
 }
