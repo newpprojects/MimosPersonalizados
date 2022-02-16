@@ -84,20 +84,20 @@ body
         font-size: 85px
         margin: 70px 0 0 63px
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite
     margin: 30px 10px 30px 10px
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite
     @include breakpoint (medium)
         display: flex
         justify-content: center
         margin: 60px 15px 40px 15px
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite
     @include breakpoint (large)
         margin: 150px 30px 100px 30px
 
-.backFirst, .backFirst1
+.backFirst, .backFirst1, .backFirst2, .backFirst3
     width: 135px
     height: 135px
     background-color: $second
@@ -107,7 +107,7 @@ body
         width: 115px
         padding: 8px
 
-.backFirst, .backFirst1
+.backFirst, .backFirst1, .backFirst2, .backFirst3
     @include breakpoint (medium)
         width: 200px
         height: 200px 
@@ -116,7 +116,7 @@ body
             width:150px
             padding: 20px  
 
-.backFirst, .backFirst1
+.backFirst, .backFirst1, .backFirst2, .backFirst3
     @include breakpoint (large)
         width: 500px
         height: 500px 
@@ -177,7 +177,7 @@ body
         font-size: 40px
         margin: 50px 0 0 20px
 
-.mug, .gifts, .squeeze
+.mug, .gifts, .squeeze, .paperCard, .invite
     // align-itens: center
     text-align: center
     margin: 30px 10px 30px 10px
@@ -191,14 +191,14 @@ body
         padding: 8px
         margin-bottom: 5px
 
-.mug, .gifts, .squeeze
+.mug, .gifts, .squeeze, .paperCard, .invite
     @include breakpoint (medium)
         margin: 40px 15px 40px 15px
         grid-template-columns: 32.3% 32.3% 32.3%
         grid-template-rows: 50% 50%
         font-size: 16px
 
-.mug, .gifts, .squeeze
+.mug, .gifts, .squeeze, .paperCard, .invite
     @include breakpoint (large)
         margin: 0 80px 150px 80px
         grid-template-columns: 32.8% 32.8% 32.8%
@@ -573,3 +573,98 @@ body
     @include breakpoint(large)
         width: 220px
         
+.backFirst2
+    img
+        width: 105px
+
+.backFirst2
+    @include breakpoint(medium)
+        img
+            width: 140px
+
+.backFirst2
+    @include breakpoint(large)
+        img
+            width: 350px
+            padding-left: 68px
+
+.paperCard
+    @include breakpoint(large)
+        p
+            padding: 30px
+
+.inviteCard, .birthBox, .stickerCard, .birthItens, .cakeTop, .birthSouvenir
+    width: 110px
+    margin-top: 10px
+
+.inviteCard, .birthBox, .stickerCard, .birthItens, .cakeTop, .birthSouvenir
+    @include breakpoint(medium)
+        width: 130px
+
+.inviteCard, .birthBox, .stickerCard, .birthItens, .cakeTop, .birthSouvenir
+    @include breakpoint(large)
+        width: 230px
+        margin-top: 20px
+
+.inviteCard
+    @include breakpoint(large)
+        margin-bottom: 15px
+
+.birthBox
+   @include breakpoint(large)
+        width: 240px
+
+.stickerCard
+   @include breakpoint(medium)
+    margin: 15px 0 10px 0
+
+.stickerCard
+   @include breakpoint(large)
+    margin: 40px 0 20px 0
+
+.birthItens
+    @include breakpoint(medium)
+        margin: 20px 0 0 0
+
+.cakeTop
+    @include breakpoint(medium)
+        margin: 17px 0 0 0
+
+.birthSouvenir
+    @include breakpoint(medium)
+        margin: 20px 0 13px 0
+
+.birthItens, .cakeTop, .birthSouvenir
+    @include breakpoint(large)
+        margin-top: 30px
+
+.backFirst3
+    img
+        width: 90px
+        padding: 20px 0 0 22px
+
+.backFirst3
+    @include breakpoint(medium)
+        img
+            width: 130px
+            padding: 28px 0 0 34px
+
+.backFirst3
+    @include breakpoint(large)
+        img
+            width: 320px
+            padding: 78px 0 0 94px
+
+.inviteBox, .inviteGlass, .inviteMug, .inviteCard, .inviteTile
+    width: 120px
+
+.inviteBox
+    width: 130px
+    margin: 10px
+
+.inviteMug
+    width: 100px
+    margin: 10px
+
+.inviteTile
+    width: 110px

@@ -83,12 +83,12 @@ body {
   }
 }
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper {
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite {
   margin: 30px 10px 30px 10px;
 }
 
 @media (min-width: 768px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite {
     display: flex;
     justify-content: center;
     margin: 60px 15px 40px 15px;
@@ -96,42 +96,42 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite {
     margin: 150px 30px 100px 30px;
   }
 }
 
-.backFirst, .backFirst1 {
+.backFirst, .backFirst1, .backFirst2, .backFirst3 {
   width: 135px;
   height: 135px;
   background-color: #FFEBF1;
   border-radius: 50%;
   margin: auto auto 15px auto;
 }
-.backFirst img, .backFirst1 img {
+.backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img {
   width: 115px;
   padding: 8px;
 }
 
 @media (min-width: 768px) {
-  .backFirst, .backFirst1 {
+  .backFirst, .backFirst1, .backFirst2, .backFirst3 {
     width: 200px;
     height: 200px;
     margin: 0 80px 40px 15px;
   }
-  .backFirst img, .backFirst1 img {
+  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img {
     width: 150px;
     padding: 20px;
   }
 }
 
 @media (min-width: 1600px) {
-  .backFirst, .backFirst1 {
+  .backFirst, .backFirst1, .backFirst2, .backFirst3 {
     width: 500px;
     height: 500px;
     margin: 70px 80px 0 15px;
   }
-  .backFirst img, .backFirst1 img {
+  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img {
     width: 450px;
   }
 }
@@ -205,7 +205,7 @@ body {
   }
 }
 
-.mug, .gifts, .squeeze {
+.mug, .gifts, .squeeze, .paperCard, .invite {
   text-align: center;
   margin: 30px 10px 30px 10px;
   display: grid;
@@ -213,7 +213,7 @@ body {
   grid-template-columns: 49.5% 49.5%;
   grid-gap: 10px;
 }
-.mug p, .gifts p, .squeeze p {
+.mug p, .gifts p, .squeeze p, .paperCard p, .invite p {
   font-weight: bold;
   line-height: 20px;
   padding: 8px;
@@ -221,7 +221,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .mug, .gifts, .squeeze {
+  .mug, .gifts, .squeeze, .paperCard, .invite {
     margin: 40px 15px 40px 15px;
     grid-template-columns: 32.3% 32.3% 32.3%;
     grid-template-rows: 50% 50%;
@@ -230,12 +230,12 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .mug, .gifts, .squeeze {
+  .mug, .gifts, .squeeze, .paperCard, .invite {
     margin: 0 80px 150px 80px;
     grid-template-columns: 32.8% 32.8% 32.8%;
     font-size: 35px;
   }
-  .mug p, .gifts p, .squeeze p {
+  .mug p, .gifts p, .squeeze p, .paperCard p, .invite p {
     line-height: 30px;
   }
 }
@@ -745,4 +745,130 @@ body {
   .scholarSqueeze {
     width: 220px;
   }
+}
+
+.backFirst2 img {
+  width: 105px;
+}
+
+@media (min-width: 768px) {
+  .backFirst2 img {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .backFirst2 img {
+    width: 350px;
+    padding-left: 68px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .paperCard p {
+    padding: 30px;
+  }
+}
+
+.inviteCard, .birthBox, .stickerCard, .birthItens, .cakeTop, .birthSouvenir {
+  width: 110px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .inviteCard, .birthBox, .stickerCard, .birthItens, .cakeTop, .birthSouvenir {
+    width: 130px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inviteCard, .birthBox, .stickerCard, .birthItens, .cakeTop, .birthSouvenir {
+    width: 230px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inviteCard {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .birthBox {
+    width: 240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .stickerCard {
+    margin: 15px 0 10px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .stickerCard {
+    margin: 40px 0 20px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .birthItens {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .cakeTop {
+    margin: 17px 0 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .birthSouvenir {
+    margin: 20px 0 13px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .birthItens, .cakeTop, .birthSouvenir {
+    margin-top: 30px;
+  }
+}
+
+.backFirst3 img {
+  width: 90px;
+  padding: 20px 0 0 22px;
+}
+
+@media (min-width: 768px) {
+  .backFirst3 img {
+    width: 130px;
+    padding: 28px 0 0 34px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .backFirst3 img {
+    width: 320px;
+    padding: 78px 0 0 94px;
+  }
+}
+
+.inviteBox, .inviteGlass, .inviteMug, .inviteCard, .inviteTile {
+  width: 120px;
+}
+
+.inviteBox {
+  width: 130px;
+  margin: 10px;
+}
+
+.inviteMug {
+  width: 100px;
+  margin: 10px;
+}
+
+.inviteTile {
+  width: 110px;
 }
