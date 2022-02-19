@@ -83,12 +83,12 @@ body {
   }
 }
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite {
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt {
   margin: 30px 10px 30px 10px;
 }
 
 @media (min-width: 768px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt {
     display: flex;
     justify-content: center;
     margin: 60px 15px 40px 15px;
@@ -96,42 +96,42 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt {
     margin: 150px 30px 100px 30px;
   }
 }
 
-.backFirst, .backFirst1, .backFirst2, .backFirst3 {
+.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4 {
   width: 135px;
   height: 135px;
   background-color: #FFEBF1;
   border-radius: 50%;
   margin: auto auto 15px auto;
 }
-.backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img {
+.backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img {
   width: 115px;
   padding: 8px;
 }
 
 @media (min-width: 768px) {
-  .backFirst, .backFirst1, .backFirst2, .backFirst3 {
+  .backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4 {
     width: 200px;
     height: 200px;
     margin: 0 80px 40px 15px;
   }
-  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img {
+  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img {
     width: 150px;
     padding: 20px;
   }
 }
 
 @media (min-width: 1600px) {
-  .backFirst, .backFirst1, .backFirst2, .backFirst3 {
+  .backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4 {
     width: 500px;
     height: 500px;
     margin: 70px 80px 0 15px;
   }
-  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img {
+  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img {
     width: 450px;
   }
 }
@@ -148,7 +148,7 @@ body {
   }
 }
 
-.titleS, .titleSqueeze {
+.titleS, .titleSqueeze, .titleIvite {
   font-family: "fontMimos";
   text-align: center;
   margin: auto auto 15px auto;
@@ -158,13 +158,13 @@ body {
 }
 
 @media (min-width: 768px) {
-  .titleS, .titleSqueeze {
+  .titleS, .titleSqueeze, .titleIvite {
     display: flex;
     font-size: 43px;
   }
 }
 @media (min-width: 1600px) {
-  .titleS, .titleSqueeze {
+  .titleS, .titleSqueeze, .titleIvite {
     font-size: 80px;
   }
 }
@@ -205,7 +205,7 @@ body {
   }
 }
 
-.mug, .gifts, .squeeze, .paperCard, .invite {
+.mug, .gifts, .squeeze, .paperCard, .invite, .shirt {
   text-align: center;
   margin: 30px 10px 30px 10px;
   display: grid;
@@ -213,7 +213,7 @@ body {
   grid-template-columns: 49.5% 49.5%;
   grid-gap: 10px;
 }
-.mug p, .gifts p, .squeeze p, .paperCard p, .invite p {
+.mug p, .gifts p, .squeeze p, .paperCard p, .invite p, .shirt p {
   font-weight: bold;
   line-height: 20px;
   padding: 8px;
@@ -221,7 +221,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .mug, .gifts, .squeeze, .paperCard, .invite {
+  .mug, .gifts, .squeeze, .paperCard, .invite, .shirt {
     margin: 40px 15px 40px 15px;
     grid-template-columns: 32.3% 32.3% 32.3%;
     grid-template-rows: 50% 50%;
@@ -230,12 +230,12 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .mug, .gifts, .squeeze, .paperCard, .invite {
+  .mug, .gifts, .squeeze, .paperCard, .invite, .shirt {
     margin: 0 80px 150px 80px;
     grid-template-columns: 32.8% 32.8% 32.8%;
     font-size: 35px;
   }
-  .mug p, .gifts p, .squeeze p, .paperCard p, .invite p {
+  .mug p, .gifts p, .squeeze p, .paperCard p, .invite p, .shirt p {
     line-height: 30px;
   }
 }
@@ -836,6 +836,24 @@ body {
   }
 }
 
+@media (min-width: 1600px) {
+  .invite p {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .titleIvite {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .titleIvite {
+    margin-top: 30px;
+  }
+}
+
 .backFirst3 img {
   width: 90px;
   padding: 20px 0 0 22px;
@@ -849,13 +867,16 @@ body {
 }
 
 @media (min-width: 1600px) {
+  .backFirst3 {
+    margin-top: 0;
+  }
   .backFirst3 img {
     width: 320px;
     padding: 78px 0 0 94px;
   }
 }
 
-.inviteBox, .inviteGlass, .inviteMug, .inviteCard, .inviteTile {
+.inviteBox, .inviteGlass, .inviteMug, .inviteCardd, .inviteTile {
   width: 120px;
 }
 
@@ -864,11 +885,150 @@ body {
   margin: 10px;
 }
 
+@media (min-width: 768px) {
+  .inviteBox {
+    width: 150px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inviteBox {
+    width: 280px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inviteGlass {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inviteGlass {
+    width: 220px;
+    margin-top: 20px;
+  }
+}
+
 .inviteMug {
   width: 100px;
   margin: 10px;
 }
 
+@media (min-width: 768px) {
+  .inviteMug {
+    width: 140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inviteMug {
+    width: 210px;
+    margin-top: 43px;
+  }
+}
+
+@media (min-width: 768px) {
+  .inviteCardd {
+    width: 140px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inviteCardd {
+    width: 265px;
+  }
+}
+
 .inviteTile {
   width: 110px;
+}
+
+@media (min-width: 768px) {
+  .inviteTile {
+    width: 120px;
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .inviteTile {
+    width: 220px;
+  }
+}
+
+.backFirst4 img {
+  width: 115px;
+  padding: 10px 0 0 12px;
+}
+
+.shirtBody, .shirtCushion, .shirtTribute, .shirtDaddy, .shirtUniform, .shirtTowel {
+  width: 120px;
+}
+
+@media (min-width: 768px) {
+  .shirtBody, .shirtCushion, .shirtTribute, .shirtDaddy, .shirtUniform, .shirtTowel {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .shirtBody, .shirtCushion, .shirtTribute, .shirtDaddy, .shirtUniform, .shirtTowel {
+    width: 220px;
+  }
+}
+
+.shirtCushion {
+  width: 130px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .shirtCushion {
+    width: 170px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .shirtCushion {
+    width: 260px;
+    margin-top: 15px;
+  }
+}
+
+.shirtTribute {
+  width: 130px;
+  margin-top: 14px;
+}
+
+@media (min-width: 768px) {
+  .shirtTribute {
+    width: 170px;
+    margin-bottom: 7px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .shirtTribute {
+    width: 250px;
+  }
+}
+
+.shirtDaddy, .shirtUniform {
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .shirtDaddy {
+    margin: 20px 0 7px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .shirtTowel {
+    margin-bottom: 9px;
+  }
 }
