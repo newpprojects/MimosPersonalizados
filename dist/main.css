@@ -83,12 +83,12 @@ body {
   }
 }
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt {
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF {
   margin: 30px 10px 30px 10px;
 }
 
 @media (min-width: 768px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF {
     display: flex;
     justify-content: center;
     margin: 60px 15px 40px 15px;
@@ -96,42 +96,42 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt {
+  .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF {
     margin: 150px 30px 100px 30px;
   }
 }
 
-.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4 {
+.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4, .backFirst5 {
   width: 135px;
   height: 135px;
   background-color: #FFEBF1;
   border-radius: 50%;
   margin: auto auto 15px auto;
 }
-.backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img {
+.backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img, .backFirst5 img {
   width: 115px;
   padding: 8px;
 }
 
 @media (min-width: 768px) {
-  .backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4 {
+  .backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4, .backFirst5 {
     width: 200px;
     height: 200px;
     margin: 0 80px 40px 15px;
   }
-  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img {
+  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img, .backFirst5 img {
     width: 150px;
     padding: 20px;
   }
 }
 
 @media (min-width: 1600px) {
-  .backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4 {
+  .backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4, .backFirst5 {
     width: 500px;
     height: 500px;
     margin: 70px 80px 0 15px;
   }
-  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img {
+  .backFirst img, .backFirst1 img, .backFirst2 img, .backFirst3 img, .backFirst4 img, .backFirst5 img {
     width: 450px;
   }
 }
@@ -148,7 +148,7 @@ body {
   }
 }
 
-.titleS, .titleSqueeze, .titleIvite {
+.titleS, .titleSqueeze, .titleIvite, .titleShirt {
   font-family: "fontMimos";
   text-align: center;
   margin: auto auto 15px auto;
@@ -158,17 +158,19 @@ body {
 }
 
 @media (min-width: 768px) {
-  .titleS, .titleSqueeze, .titleIvite {
+  .titleS, .titleSqueeze, .titleIvite, .titleShirt {
     display: flex;
     font-size: 43px;
   }
 }
+
 @media (min-width: 1600px) {
-  .titleS, .titleSqueeze, .titleIvite {
+  .titleS, .titleSqueeze, .titleIvite, .titleShirt {
     font-size: 80px;
   }
 }
-.personalOne {
+
+.personalOne, .personalTwo {
   font-family: "Arial", Helvetica, sans-serif;
   color: #363636;
   font-size: 20px;
@@ -176,7 +178,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .personalOne {
+  .personalOne, .personalTwo {
     font-size: 30px;
     margin-left: 10px;
     margin-top: -0.1px;
@@ -205,7 +207,7 @@ body {
   }
 }
 
-.mug, .gifts, .squeeze, .paperCard, .invite, .shirt {
+.mug, .gifts, .squeeze, .paperCard, .invite, .shirt, .mdf {
   text-align: center;
   margin: 30px 10px 30px 10px;
   display: grid;
@@ -213,7 +215,7 @@ body {
   grid-template-columns: 49.5% 49.5%;
   grid-gap: 10px;
 }
-.mug p, .gifts p, .squeeze p, .paperCard p, .invite p, .shirt p {
+.mug p, .gifts p, .squeeze p, .paperCard p, .invite p, .shirt p, .mdf p {
   font-weight: bold;
   line-height: 20px;
   padding: 8px;
@@ -221,22 +223,26 @@ body {
 }
 
 @media (min-width: 768px) {
-  .mug, .gifts, .squeeze, .paperCard, .invite, .shirt {
+  .mug, .gifts, .squeeze, .paperCard, .invite, .shirt, .mdf {
     margin: 40px 15px 40px 15px;
     grid-template-columns: 32.3% 32.3% 32.3%;
     grid-template-rows: 50% 50%;
     font-size: 16px;
   }
+  .mug p, .gifts p, .squeeze p, .paperCard p, .invite p, .shirt p, .mdf p {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1600px) {
-  .mug, .gifts, .squeeze, .paperCard, .invite, .shirt {
+  .mug, .gifts, .squeeze, .paperCard, .invite, .shirt, .mdf {
     margin: 0 80px 150px 80px;
     grid-template-columns: 32.8% 32.8% 32.8%;
     font-size: 35px;
   }
-  .mug p, .gifts p, .squeeze p, .paperCard p, .invite p, .shirt p {
+  .mug p, .gifts p, .squeeze p, .paperCard p, .invite p, .shirt p, .mdf p {
     line-height: 30px;
+    font-size: 30px;
   }
 }
 
@@ -979,6 +985,12 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .titleShirt {
+    display: block;
+  }
+}
+
 .shirtBody, .shirtCushion, .shirtTribute, .shirtDaddy, .shirtUniform, .shirtTowel {
   width: 120px;
 }
@@ -1044,5 +1056,99 @@ body {
 @media (min-width: 768px) {
   .shirtTowel {
     margin-bottom: 9px;
+  }
+}
+
+.backFirst5 img {
+  width: 120px;
+  padding: 25px 0 0 8px;
+}
+
+@media (min-width: 768px) {
+  .backFirst5 img {
+    width: 180px;
+    padding: 35px 0 0 8px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .backFirst5 img {
+    width: 400px;
+    padding: 95px 0 0 48px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .personalTwo {
+    margin-left: 20px;
+    font-size: 60px;
+  }
+}
+
+.mdfBox, .mdfPhone, .mdfPuzzle, .mdfPaint {
+  width: 130px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .mdfBox, .mdfPhone, .mdfPuzzle, .mdfPaint {
+    width: 190px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mdfBox, .mdfPhone, .mdfPuzzle, .mdfPaint {
+    width: 310px;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mdf p {
+    padding: 5px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mdf p {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .puzzle {
+    margin-top: -15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .mdfPuzzle {
+    width: 175px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mdfPuzzle {
+    width: 260px;
+    margin-top: 15px;
+  }
+}
+
+.mdfPaint {
+  width: 100px;
+  margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .mdfPaint {
+    width: 120px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .mdfPaint {
+    width: 190px;
   }
 }

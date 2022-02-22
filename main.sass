@@ -84,20 +84,20 @@ body
         font-size: 85px
         margin: 70px 0 0 63px
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF
     margin: 30px 10px 30px 10px
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF
     @include breakpoint (medium)
         display: flex
         justify-content: center
         margin: 60px 15px 40px 15px
 
-.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt
+.sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF
     @include breakpoint (large)
         margin: 150px 30px 100px 30px
 
-.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4
+.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4, .backFirst5
     width: 135px
     height: 135px
     background-color: $second
@@ -107,7 +107,7 @@ body
         width: 115px
         padding: 8px
 
-.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4
+.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4, .backFirst5
     @include breakpoint (medium)
         width: 200px
         height: 200px 
@@ -116,7 +116,7 @@ body
             width:150px
             padding: 20px  
 
-.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4
+.backFirst, .backFirst1, .backFirst2, .backFirst3, .backFirst4, .backFirst5
     @include breakpoint (large)
         width: 500px
         height: 500px 
@@ -132,7 +132,7 @@ body
     @include breakpoint (large)
         max-width: 750px
     
-.titleS, .titleSqueeze, .titleIvite
+.titleS, .titleSqueeze, .titleIvite, .titleShirt
     font-family: 'fontMimos'
     text-align: center
     margin: auto auto 15px auto
@@ -140,22 +140,22 @@ body
     font-size: 30px
     line-height: 2px
 
-@include breakpoint(medium)
-    .titleS, .titleSqueeze, .titleIvite
+.titleS, .titleSqueeze, .titleIvite, .titleShirt
+    @include breakpoint(medium)
         display: flex
         font-size: 43px
 
-@include breakpoint(large)
-    .titleS, .titleSqueeze, .titleIvite
+.titleS, .titleSqueeze, .titleIvite, .titleShirt
+    @include breakpoint(large)
         font-size: 80px
 
-.personalOne
+.personalOne, .personalTwo
     @include font
     color: $one 
     font-size: 20px
     text-align: center
 
-.personalOne
+.personalOne, .personalTwo
     @include breakpoint(medium)
         font-size: 30px
         margin-left: 10px
@@ -177,7 +177,7 @@ body
         font-size: 40px
         margin: 50px 0 0 20px
 
-.mug, .gifts, .squeeze, .paperCard, .invite, .shirt
+.mug, .gifts, .squeeze, .paperCard, .invite, .shirt, .mdf
     // align-itens: center
     text-align: center
     margin: 30px 10px 30px 10px
@@ -191,20 +191,24 @@ body
         padding: 8px
         margin-bottom: 5px
 
-.mug, .gifts, .squeeze, .paperCard, .invite, .shirt
+.mug, .gifts, .squeeze, .paperCard, .invite, .shirt, .mdf
     @include breakpoint (medium)
         margin: 40px 15px 40px 15px
         grid-template-columns: 32.3% 32.3% 32.3%
         grid-template-rows: 50% 50%
         font-size: 16px
+        p
+            font-size: 20px
 
-.mug, .gifts, .squeeze, .paperCard, .invite, .shirt
+
+.mug, .gifts, .squeeze, .paperCard, .invite, .shirt, .mdf
     @include breakpoint (large)
         margin: 0 80px 150px 80px
         grid-template-columns: 32.8% 32.8% 32.8%
         font-size: 35px
         p 
             line-height: 30px
+            font-size: 30px
     
 .card 
   background: $fourth
@@ -747,6 +751,10 @@ body
             width: 390px
             padding: 45px 0 0 52px
 
+.titleShirt
+     @include breakpoint(medium)
+        display: block
+
 .shirtBody, .shirtCushion, .shirtTribute, .shirtDaddy, .shirtUniform, .shirtTowel
     width: 120px
 
@@ -794,3 +802,76 @@ body
 .shirtTowel
    @include breakpoint(medium)
         margin-bottom: 9px 
+
+
+.backFirst5
+    img
+        width: 120px
+        padding: 25px 0 0 8px
+
+.backFirst5
+    @include breakpoint(medium)
+        img
+            width: 180px
+            padding: 35px 0 0 8px
+
+.backFirst5
+    @include breakpoint(large)
+        img
+            width: 400px
+            padding: 95px 0 0 48px
+
+.personalTwo
+    @include breakpoint(large)
+        margin-left: 20px
+        font-size: 60px
+
+.mdfBox, .mdfPhone, .mdfPuzzle, .mdfPaint
+    width: 130px
+    margin-top: 20px
+
+.mdfBox, .mdfPhone, .mdfPuzzle, .mdfPaint
+    @include breakpoint(medium)
+        width: 190px
+        margin-top: 20px
+
+.mdfBox, .mdfPhone, .mdfPuzzle, .mdfPaint
+    @include breakpoint(large)
+        width: 310px
+        margin-top: 20px
+
+.mdf
+    @include breakpoint(medium)
+        p
+            padding: 5px
+
+.mdf
+    @include breakpoint(large)
+        p
+            padding: 40px
+           
+.puzzle
+    @include breakpoint(medium)
+        margin-top: -15px
+
+.mdfPuzzle
+    @include breakpoint(medium)
+        width: 175px
+        margin-top: 5px
+
+.mdfPuzzle
+    @include breakpoint(large)
+        width: 260px
+        margin-top: 15px
+
+.mdfPaint
+    width: 100px
+    margin-top: 15px
+
+.mdfPaint
+    @include breakpoint(medium)
+        width: 120px
+
+.mdfPaint
+    @include breakpoint(large)
+        width: 190px
