@@ -1152,3 +1152,23 @@ body {
     width: 190px;
   }
 }
+
+#items-wrapper {
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+}
+
+#items {
+  display: flex;
+  overflow-x: auto;
+}
+
+.item {
+  flex: none;
+}
+
+.planner img {
+  width: 200px;
+  height: 200px;
+}
