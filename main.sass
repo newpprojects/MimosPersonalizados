@@ -210,7 +210,7 @@ body
             line-height: 30px
             font-size: 30px
     
-.card 
+.card, .card2
   background: $fourth
   box-shadow: #c0b5b5 4px 4px 8px, #a59d9d -4px -4px 8px
 
@@ -887,88 +887,59 @@ body
         img
             width: 170px
 
-// #items-wrapper
-//     // width: 100vw
-//     display: grid
-//     text-align: center
-//     margin: 30px 10px 30px 10px
-//     display: grid
-//     grid-template-areas: "one4 two4 three4 four4" "five4 six4 seven4 eight4 nine4" "ten4 eleven4 twelve4 thirtee4"
-//     // grid-template-columns: 49.5% 49.5%
-//     grid-gap: 20px 
-//     p 
-//         font-weight: bold
-//         line-height: 20px
-//         padding: 8px
-//         margin-bottom: 5px
-
-// #items-wrapper
-//     @include breakpoint(medium)
-//         grid-gap: 30px 
-
-// #items
-//     display: flex 
-//     overflow-x: auto
-    
-    
-// .item
-//     flex: none
-//     // width: 100%
-//     // height: 100%
-
-// .img
-//     // width: 100px
-//     // height: 100%
-//     // object-fit: cover
-
-// .planner
-//     img
-//         width: 140px
-//         height: 140px
-
-// .planner
-//     @include breakpoint(medium)
-//         img
-//             width: 190px
-//             height: 190px
-
-// .planner1
-//     margin-top: 25px
-//     width: 140px
-//     height: 120px
-
-// .planner1
-//     @include breakpoint(medium)
-//         width: 190px
-//         height: 170px
-
 // Agendas com slides
 
 .slidePlanner
-    margin: 30px
-/* Slideshow container */
-.slideshow-container 
-  max-width: 270px
-  position: relative
-  margin: auto
+    margin: 50px
+
+.slidePlanner
+    @include breakpoint(medium)
+        display: grid
+        grid-template-areas: "one4 two4 three4" 
+        grid-template-columns: 33.30% 33.30% 33.30%
+        grid-gap: 10px
+        margin: 40px 15px 40px 15px
+
+.slideshow-container , .slideshow-container2, .slideshow-container3
+//   max-width: 270px
+//   position: relative
+//   margin: auto
+    position: relative
+    margin: auto
   img
       width: 200px
-      margin: 0 0 10px 10px  
+    //   margin: 0 0 10px 10px 
 
-/* Hide the images by default */
+.slideshow-container , .slideshow-container2, .slideshow-container3
+  @include breakpoint(medium)
+    // // max-width: 100%
+    // position: relative
+    // margin: auto
+    img
+        width: 210px
+        // margin: 0 0 10px 10px  
+
 .mySlides 
   display: none
 
+.card2
+  box-shadow: #a59d9d -4px -4px 8px
+
 .slideOne
     margin-top: 15px !important
-/* Next & previous buttons */
+    width: 180px !important
+
+.slideOne
+    @include breakpoint(medium)
+        margin-top: 15px !important
+        width: 210px !important
+
 .prev, .next 
   cursor: pointer
-  position: absolute
-  top: 50%
+//   position: absolute
+//   top: 50%
   width: auto
   margin-top: -22px
-//   padding: 16px
   padding: 0
   color: $third 
   font-weight: bold
@@ -979,19 +950,16 @@ body
 
 .prev
   color: $third
-/* Position the "next button" to the right */
+
 .next 
   right: 30px
   border-radius: 3px 0 0 3px
   color: $third
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover 
   background-color: rgb(183 175 175 / 80%)
 
-
-/* Caption text */
-.text 
+.text, .text3
   font-size: 15px
   padding: 8px 12px
   position: absolute
@@ -1008,8 +976,6 @@ body
   position: absolute
   top: 0
 
-
-/* The dots/bullets/indicators */
 .dot 
   cursor: pointer
   height: 15px
@@ -1020,24 +986,59 @@ body
   display: inline-block
   transition: background-color 0.6s ease
 
+.active
+  background-color: $third
 
-.active, .dot:hover 
-  background-color: #717171
+// .active, .dot:hover 
+// //   background-color: #717171
+// //   background-color: $third
+//   background-color: #f47ab6
 
-
-/* Fading animation */
 .fade 
   -webkit-animation-name: fade
   -webkit-animation-duration: 1.5s
   animation-name: fade
   animation-duration: 1.5s
 
+.dotSlide
+    text-align: center
 
-// @-webkit-keyframes fade 
-//    from (opacity: .4)
-//    to (opacity: 1)
+.slideshow-container2, .slideshow-container3
+    img
+        width: 210px
+        height: 200px
+        margin: 10px 0 10px 10px
 
+.slideshow-container3
+    img
+        margin-bottom: 25px
 
-// @keyframes fade 
-//   from opacity: .4
-//   to opacity: 1
+.dot2, .dot3
+  cursor: pointer
+  height: 15px
+  width: 15px
+  margin: 10px 2px
+  background-color: #bbb
+  border-radius: 50%
+  display: inline-block
+  transition: background-color 0.6s ease
+
+// .active2, .dot2:hover 
+//     background-color: #717171
+
+.text3
+    margin-bottom: 10px
+
+.scheduleSlide
+    width: 207px !important
+
+.scheduleSlide
+    @include breakpoint(medium)
+        width: 210px !important
+
+.dot3
+    // width: 45px
+    margin: 0
+
+.active2, .dot3:hover
+    background-color: $third
