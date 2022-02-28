@@ -142,7 +142,7 @@ body
 
 .titleS, .titleSqueeze, .titleIvite, .titleShirt
     @include breakpoint(medium)
-        display: flex
+        display: block
         font-size: 43px
 
 .titleS, .titleSqueeze, .titleIvite, .titleShirt
@@ -887,27 +887,45 @@ body
         img
             width: 170px
 
+.backFirst6
+    @include breakpoint(large)
+        img
+            width: 420px
+            margin: 50px 0 0 15px
+
 // Agendas com slides
 
 .slidePlanner
-    margin: 50px
+    display: grid
+    grid-template-areas: "one4" "two4" "three4" 
+    grid-template-columns: 100%
+    grid-gap: 10px
+    margin: 30px 10px 30px 10px
+    text-align: center
+
 
 .slidePlanner
     @include breakpoint(medium)
         display: grid
         grid-template-areas: "one4 two4 three4" 
         grid-template-columns: 33.30% 33.30% 33.30%
-        grid-gap: 10px
-        margin: 40px 15px 40px 15px
-
-.slideshow-container , .slideshow-container2, .slideshow-container3
+        grid-gap: 15px
+        margin: 40px 25px 40px 15px
+        
+.slideshow-container, .slideshow-container2, .slideshow-container3
 //   max-width: 270px
 //   position: relative
 //   margin: auto
     position: relative
     margin: auto
-  img
-      width: 200px
+    text-align: center
+    align-items: center
+
+    img
+        width: 200px
+        align-content: center
+        align-items: center
+
     //   margin: 0 0 10px 10px 
 
 .slideshow-container , .slideshow-container2, .slideshow-container3
@@ -919,6 +937,15 @@ body
         width: 210px
         // margin: 0 0 10px 10px  
 
+.slideshow-container, .slideshow-container2, .slideshow-container3
+  @include breakpoint(large)
+    // // max-width: 100%
+    // position: relative
+    // margin: auto
+    img
+        width: 310px
+        // margin: 0 0 10px 10px  
+
 .mySlides 
   display: none
 
@@ -926,22 +953,24 @@ body
   box-shadow: #a59d9d -4px -4px 8px
 
 .slideOne
-    margin-top: 15px !important
-    width: 180px !important
+    margin-top: 15px 
+    width: 180px 
 
 .slideOne
     @include breakpoint(medium)
-        margin-top: 15px !important
-        width: 210px !important
+        margin-top: 15px 
+        width: 210px 
+.prevNext
+   position: relative 
 
 .prev, .next 
   cursor: pointer
-//   position: absolute
-//   top: 50%
+  position: absolute
+  top: 50%
   width: auto
   margin-top: -22px
-  padding: 0
-  color: $third 
+  padding: 16px
+//   color: white
   font-weight: bold
   font-size: 18px
   transition: 0.6s ease
@@ -950,11 +979,15 @@ body
 
 .prev
   color: $third
+//   margin-left: -350px
+//   margin-top: -120px
+//   left: -30px
 
 .next 
-  right: 30px
+  right: 0
   border-radius: 3px 0 0 3px
   color: $third
+//   margin-top: -20px  
 
 .prev:hover, .next:hover 
   background-color: rgb(183 175 175 / 80%)
@@ -962,8 +995,8 @@ body
 .text, .text3
   font-size: 15px
   padding: 8px 12px
-  position: absolute
-  bottom: 8px
+//   position: absolute
+//   bottom: 8px
   width: 100%
   text-align: center
   margin-bottom: 18px
