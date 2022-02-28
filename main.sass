@@ -132,7 +132,7 @@ body
     @include breakpoint (large)
         max-width: 750px
     
-.titleS, .titleSqueeze, .titleIvite, .titleShirt
+.titleS, .titleSqueeze, .titleIvite, .titleShirt, .titlePlanner
     font-family: 'fontMimos'
     text-align: center
     margin: auto auto 15px auto
@@ -140,12 +140,13 @@ body
     font-size: 30px
     line-height: 2px
 
-.titleS, .titleSqueeze, .titleIvite, .titleShirt
+.titleS, .titleSqueeze, .titleIvite, .titleShirt, .titlePlanner
     @include breakpoint(medium)
-        display: block
+        display: flex
         font-size: 43px
+        line-height: 0px
 
-.titleS, .titleSqueeze, .titleIvite, .titleShirt
+.titleS, .titleSqueeze, .titleIvite, .titleShirt, .titlePlanner
     @include breakpoint(large)
         font-size: 80px
 
@@ -508,7 +509,8 @@ body
 .titleSqueeze
     @include breakpoint (medium)
         margin-top: 30px
-
+        display: block
+        
 .titleSqueeze
     @include breakpoint (large)
         margin-top: 150px
@@ -584,7 +586,8 @@ body
 .backFirst2
     @include breakpoint(medium)
         img
-            width: 140px
+            width: 160px
+            padding: 5px
 
 .backFirst2
     @include breakpoint(large)
@@ -663,8 +666,8 @@ body
 .backFirst3
     @include breakpoint(medium)
         img
-            width: 130px
-            padding: 28px 0 0 34px
+            width: 150px
+            padding: 24px 0 0 30px
 
 .backFirst3
     @include breakpoint(large)
@@ -741,12 +744,16 @@ body
 
 .backFirst4
     @include breakpoint(medium)
+        width: 215px
+        height: 215px
         img
-            width: 170px
-            padding: 15px 0 0 12px
+            width: 187px
+            padding-right: 5px
 
 .backFirst4
     @include breakpoint(large)
+        width: 500px
+        height: 500px
         img
             width: 390px
             padding: 45px 0 0 52px
@@ -754,6 +761,7 @@ body
 .titleShirt
      @include breakpoint(medium)
         display: block
+        line-height: 20px
 
 .shirtBody, .shirtCushion, .shirtTribute, .shirtDaddy, .shirtUniform, .shirtTowel
     width: 120px
@@ -812,7 +820,7 @@ body
 .backFirst5
     @include breakpoint(medium)
         img
-            width: 180px
+            width: 190px
             padding: 35px 0 0 8px
 
 .backFirst5
@@ -884,14 +892,23 @@ body
 
 .backFirst6
     @include breakpoint(medium)
+        width: 210px
+        height: 210px
         img
-            width: 170px
+            width: 200px
+            padding: 11px 15px 0 0
 
 .backFirst6
     @include breakpoint(large)
+        width: 500px
+        height: 500px
         img
             width: 420px
             margin: 50px 0 0 15px
+
+.titlePlanner
+    @include breakpoint(medium)
+        display: block
 
 // Agendas com slides
 
