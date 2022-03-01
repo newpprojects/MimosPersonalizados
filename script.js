@@ -27,10 +27,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
-
-
-
 var slideIndex = 1;
 showSlides2(slideIndex);
 
@@ -57,11 +53,6 @@ function showSlides2(n) {
   slides2[slideIndex-1].style.display = "block";
   dots2[slideIndex-1].className += " active2";
 }
-
-
-
-
-
 
 var slideIndex3 = 1;
 showSlides3(slideIndex3);
@@ -90,3 +81,20 @@ function showSlides3(n) {
   dots3[slideIndex3-1].className += " active2";
 }
 
+//////////////////////////Modal/////////////////////////////////////////////
+
+const OPEN_BUTTON = document.querySelector('.open-modal');
+const CLOSE_BUTTON = document.querySelector('.close-modal');
+const body = document.querySelector('body');
+const modal = document.querySelector('.modal');
+
+const openModal = ()=>{
+   modal.showModal();
+};
+
+const closeModal = ()=>{
+    modal.close();
+};
+
+OPEN_BUTTON.addEventListener('click', openModal);
+CLOSE_BUTTON.addEventListener('click', closeModal);

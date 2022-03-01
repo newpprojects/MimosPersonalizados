@@ -87,6 +87,7 @@ body {
   width: 28px;
   height: 22px;
   padding: 3px 0;
+  cursor: pointer;
 }
 
 .headerMenu span {
@@ -95,6 +96,10 @@ body {
   background: #363636;
   display: block;
   margin: 4px;
+}
+
+.modal[open] {
+  border: 0;
 }
 
 .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF, .sectionPlanner {
@@ -192,13 +197,11 @@ body {
   color: #363636;
   font-size: 20px;
   text-align: center;
-  margin-left: 8px;
 }
 
 @media (min-width: 768px) {
   .personalOne, .personalTwo {
     font-size: 30px;
-    margin-left: 10px;
     margin-top: -0.1px;
   }
 }
@@ -1451,6 +1454,9 @@ body {
 }
 .footerOrganize ul {
   cursor: pointer;
+}
+.footerOrganize li {
+  list-style: none;
 }
 .footerOrganize a {
   text-decoration: none;

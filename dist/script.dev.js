@@ -107,4 +107,21 @@ function showSlides3(n) {
 
   slides3[slideIndex3 - 1].style.display = "block";
   dots3[slideIndex3 - 1].className += " active2";
-}
+} //////////////////////////Modal/////////////////////////////////////////////
+
+
+var OPEN_BUTTON = document.querySelector('.open-modal');
+var CLOSE_BUTTON = document.querySelector('.close-modal');
+var body = document.querySelector('body');
+var modal = document.querySelector('.modal');
+
+var openModal = function openModal() {
+  modal.showModal();
+};
+
+var closeModal = function closeModal() {
+  modal.close();
+};
+
+OPEN_BUTTON.addEventListener('click', openModal);
+CLOSE_BUTTON.addEventListener('click', closeModal);
