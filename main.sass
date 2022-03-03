@@ -34,19 +34,18 @@ body
 .begin
     background-color: $second
     display: flex
-    img
-        width: 50px
-        padding: 8px
 
-.begin
+.beginImg
+    width: 50px
+    padding: 8px
+
+.beginImg
     @include breakpoint (medium)
-        img
-            width: 120px
+        width: 120px
 
-.begin
+.beginImg
     @include breakpoint (large)
-        img
-            width: 220px
+        width: 220px
 
 .titleOne
     font-family: 'fontMimos'
@@ -102,6 +101,21 @@ body
 .modal[open]
     border: 0
 
+.modalMedia
+    img
+        width: 50px
+
+.modalTitle
+    @include breakpoint (large)
+        font-size: 40px
+        margin: 30px 0 12px 0
+
+.close-modal
+    @include breakpoint (large)
+        font-size: 22px
+
+////////////////////Modal/////////////////////////////////////////////
+
 .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF, .sectionPlanner
     margin: 30px 10px 30px 10px
 
@@ -149,7 +163,45 @@ body
 .textCaneca
     @include breakpoint (large)
         max-width: 750px
-    
+
+.t
+    display: flex
+
+.title1 
+    font-family: 'fontMimos'
+    // margin: auto
+    color: $third
+    font-size: 35px
+    padding: 10px
+    line-height: 0px
+    // margin-top: 10px
+
+.title1 
+    @include breakpoint (medium)
+        font-size: 43px
+        padding: 15px 8px 30px 0
+        // line-height: 30px
+
+.title1 
+    @include breakpoint (large)
+        font-size: 80px
+        // padding: 80px
+
+.personal1
+    @include font
+    color: $one
+    font-size: 23px
+    text-align: center
+
+.personal1
+    @include breakpoint (medium)
+        font-size: 30px
+
+.personal1
+    @include breakpoint (large)
+        font-size: 60px
+        // margin: 70px 0 0 63px
+
 .titleS, .titleSqueeze, .titleIvite, .titleShirt, .titlePlanner, .titleFooter
     font-family: 'fontMimos'
     text-align: center

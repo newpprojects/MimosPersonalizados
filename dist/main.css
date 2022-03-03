@@ -20,19 +20,20 @@ body {
   background-color: #FFEBF1;
   display: flex;
 }
-.begin img {
+
+.beginImg {
   width: 50px;
   padding: 8px;
 }
 
 @media (min-width: 768px) {
-  .begin img {
+  .beginImg {
     width: 120px;
   }
 }
 
 @media (min-width: 1600px) {
-  .begin img {
+  .beginImg {
     width: 220px;
   }
 }
@@ -102,6 +103,23 @@ body {
   border: 0;
 }
 
+.modalMedia img {
+  width: 50px;
+}
+
+@media (min-width: 1600px) {
+  .modalTitle {
+    font-size: 40px;
+    margin: 30px 0 12px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .close-modal {
+    font-size: 22px;
+  }
+}
+
 .sectionCaneca, .sectionGift, .sectionSqueeze, .sectionPaper, .sectionInvite, .sectionShirt, .sectionMDF, .sectionPlanner {
   margin: 30px 10px 30px 10px;
 }
@@ -164,6 +182,50 @@ body {
 @media (min-width: 1600px) {
   .textCaneca {
     max-width: 750px;
+  }
+}
+
+.t {
+  display: flex;
+}
+
+.title1 {
+  font-family: "fontMimos";
+  color: #f47ab6;
+  font-size: 35px;
+  padding: 10px;
+  line-height: 0px;
+}
+
+@media (min-width: 768px) {
+  .title1 {
+    font-size: 43px;
+    padding: 15px 8px 30px 0;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title1 {
+    font-size: 80px;
+  }
+}
+
+.personal1 {
+  font-family: "Arial", Helvetica, sans-serif;
+  color: #363636;
+  font-size: 23px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .personal1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .personal1 {
+    font-size: 60px;
   }
 }
 
