@@ -181,7 +181,8 @@ body {
   display: none;
   position: fixed;
   z-index: 1;
-  left: 0px;
+  padding-top: 50%;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1624,6 +1625,9 @@ body {
 
 .footerColumn {
   margin-right: 70px;
+}
+.footerColumn li {
+  list-style: none;
 }
 
 @media (min-width: 1600px) {
