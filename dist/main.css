@@ -289,7 +289,7 @@ body {
 
 @media (min-width: 1600px) {
   .title1 {
-    font-size: 80px;
+    font-size: 75px;
   }
 }
 
@@ -309,7 +309,7 @@ body {
 
 @media (min-width: 1600px) {
   .personal1 {
-    font-size: 60px;
+    font-size: 56px;
   }
 }
 
@@ -335,6 +335,7 @@ body {
 @media (min-width: 1600px) {
   .titleS, .titleSqueeze, .titleIvite, .titlePlanner {
     font-size: 80px;
+    line-height: 40px;
   }
 }
 
@@ -1184,6 +1185,7 @@ body {
 @media (min-width: 1600px) {
   .titleShirt2 {
     display: block;
+    line-height: 50px;
   }
 }
 
