@@ -196,6 +196,11 @@ body {
   width: 300px;
   max-width: 800px;
   object-fit: cover;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 @media (min-width: 768px) {
