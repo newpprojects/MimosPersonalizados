@@ -217,7 +217,6 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   top: 50%;
-  transform: translate(0, -50%);
 }
 
 @media (min-width: 768px) {
@@ -234,8 +233,8 @@ body {
 
 #btFechar {
   position: absolute;
-  top: 35px;
-  right: 35px;
+  top: 15px;
+  right: 10px;
   color: #fff;
   font-size: 30px;
   font-weight: bold;
@@ -275,9 +274,8 @@ body {
 .title1 {
   font-family: "fontMimos";
   color: #f47ab6;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 0px;
-  padding-bottom: 15px;
   text-align: center;
   align-items: center;
 }
@@ -298,15 +296,14 @@ body {
 .personal1 {
   font-family: "Arial", Helvetica, sans-serif;
   color: #363636;
-  font-size: 23px;
+  font-size: 19px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .personal1 {
     font-size: 30px;
-    margin-top: -15px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
 }
 
@@ -316,7 +313,7 @@ body {
   }
 }
 
-.titleS, .titleSqueeze, .titleIvite, .titleShirt, .titlePlanner {
+.titleS, .titleSqueeze, .titleIvite, .titlePlanner {
   font-family: "fontMimos";
   text-align: center;
   margin: auto auto 15px auto;
@@ -328,7 +325,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .titleS, .titleSqueeze, .titleIvite, .titleShirt, .titlePlanner {
+  .titleS, .titleSqueeze, .titleIvite, .titlePlanner {
     display: flex;
     font-size: 43px;
     line-height: 0px;
@@ -336,7 +333,7 @@ body {
 }
 
 @media (min-width: 1600px) {
-  .titleS, .titleSqueeze, .titleIvite, .titleShirt, .titlePlanner {
+  .titleS, .titleSqueeze, .titleIvite, .titlePlanner {
     font-size: 80px;
   }
 }
@@ -1180,14 +1177,13 @@ body {
   }
 }
 
-.titleShirt {
-  display: block;
+.titleShirt2 {
+  display: contents;
 }
 
-@media (min-width: 768px) {
-  .titleShirt {
+@media (min-width: 1600px) {
+  .titleShirt2 {
     display: block;
-    line-height: 40px;
   }
 }
 
@@ -1663,4 +1659,9 @@ body {
   .socialMedia img {
     width: 60px;
   }
+}
+
+.delivery {
+  text-align: center;
+  padding-bottom: 10px;
 }
