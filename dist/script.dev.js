@@ -107,7 +107,7 @@ function showSlides3(n) {
 
   slides3[slideIndex3 - 1].style.display = "block";
   dots3[slideIndex3 - 1].className += " active2";
-} //////////////////////////Modal/////////////////////////////////////////////
+} //////////////////////////Modal Menu/////////////////////////////////////////////
 
 
 var OPEN_BUTTON = document.querySelector('.open-modal');
@@ -124,4 +124,17 @@ var closeModal = function closeModal() {
 };
 
 OPEN_BUTTON.addEventListener('click', openModal);
-CLOSE_BUTTON.addEventListener('click', closeModal);
+CLOSE_BUTTON.addEventListener('click', closeModal); //////////////////////////Fim Modal Menu//////////////////////////////////////
+//////////////////////////Modal imgs/////////////////////////////////////////////
+
+function clique(img) {
+  var modalJ = document.getElementById("janelaModal");
+  var modalI = document.getElementById("imgModal");
+  var modalB = document.getElementById("btFechar");
+  modalJ.style.display = "block";
+  modalI.src = img;
+
+  modalB.onclick = function () {
+    modalJ.style.display = "none";
+  };
+} //////////////////////////Fim Modal Menu//////////////////////////////////////

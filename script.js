@@ -81,7 +81,7 @@ function showSlides3(n) {
   dots3[slideIndex3-1].className += " active2";
 }
 
-//////////////////////////Modal/////////////////////////////////////////////
+//////////////////////////Modal Menu/////////////////////////////////////////////
 
 const OPEN_BUTTON = document.querySelector('.open-modal');
 const CLOSE_BUTTON = document.querySelector('.close-modal');
@@ -98,3 +98,36 @@ const closeModal = ()=>{
 
 OPEN_BUTTON.addEventListener('click', openModal);
 CLOSE_BUTTON.addEventListener('click', closeModal);
+
+//////////////////////////Fim Modal Menu//////////////////////////////////////
+
+//////////////////////////Modal imgs/////////////////////////////////////////////
+function clique(img){
+  var modalJ=document.getElementById("janelaModal");
+  var modalI=document.getElementById("imgModal");
+  var modalB=document.getElementById("btFechar");
+
+  modalJ.style.display="block";
+  modalI.src=img;
+  modalB.onclick=function(){
+      modalJ.style.display="none";
+  }
+}
+
+//////////////////////////Fim Modal Menu//////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
