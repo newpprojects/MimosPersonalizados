@@ -44,7 +44,7 @@ body {
   color: #f47ab6;
   font-size: 35px;
   padding: 10px;
-  line-height: 0px;
+  line-height: 20px;
   margin-top: 10px;
 }
 
@@ -87,7 +87,7 @@ body {
 .headerMenu {
   width: 28px;
   height: 22px;
-  padding: 4px 3px;
+  padding: 10px 3px;
   cursor: pointer;
 }
 .headerMenu span {
@@ -277,6 +277,7 @@ body {
 
 .title1 {
   font-family: "fontMimos";
+  margin: auto auto 15px auto;
   color: #f47ab6;
   font-size: 30px;
   line-height: 0px;
@@ -325,7 +326,7 @@ body {
   margin: auto auto 15px auto;
   color: #f47ab6;
   font-size: 30px;
-  line-height: 2px;
+  line-height: 20px;
   display: flex;
   justify-content: center;
 }
