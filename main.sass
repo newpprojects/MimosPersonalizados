@@ -42,10 +42,12 @@ body
 .beginImg
     @include breakpoint (medium)
         width: 120px
+        margin-top: 15px
 
 .beginImg
     @include breakpoint (large)
         width: 220px
+        margin-top: 30px
 
 .titleOne
     font-family: 'fontMimos'
@@ -53,13 +55,13 @@ body
     color: $third
     font-size: 35px
     padding: 10px
-    line-height: 20px
+    line-height: 25px
     margin-top: 10px
 
 .titleOne
     @include breakpoint (medium)
         font-size: 55px
-        padding: 30px
+        padding: 15px
         line-height: 30px
 
 .titleOne
@@ -96,9 +98,13 @@ body
         margin: 4px
 
 .headerMenu
+    @include breakpoint (medium)
+        margin-top: 20px
+
+.headerMenu
     @include breakpoint (large)
         width: 58px
-        padding: 6px 5px
+        padding: 36px 5px
         span
             width: 40px
             height: 3px
@@ -116,6 +122,10 @@ body
     @include breakpoint (large)
         font-size: 40px
         margin: 30px 0 12px 0
+
+#productsColor, #socialColor
+    color: $third
+    font-size: 22px
 
 .close-modal
     position: absolute
