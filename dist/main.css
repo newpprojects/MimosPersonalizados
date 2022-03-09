@@ -29,7 +29,6 @@ body {
 @media (min-width: 768px) {
   .beginImg {
     width: 120px;
-    margin-top: 15px;
   }
 }
 
@@ -102,7 +101,7 @@ body {
 
 @media (min-width: 768px) {
   .headerMenu {
-    margin-top: 20px;
+    margin-top: 5px;
   }
 }
 
