@@ -137,6 +137,12 @@ body {
   font-size: 22px;
 }
 
+@media (min-width: 1600px) {
+  #productsColor, #socialColor {
+    font-size: 42px;
+  }
+}
+
 .close-modal {
   position: absolute;
   top: 5px;
@@ -1692,4 +1698,10 @@ body {
 .delivery {
   text-align: center;
   padding-bottom: 10px;
+}
+
+@media (min-width: 1600px) {
+  .delivery {
+    font-size: 40px;
+  }
 }

@@ -127,6 +127,10 @@ body
     color: $third
     font-size: 22px
 
+#productsColor, #socialColor
+    @include breakpoint (large)
+        font-size: 42px
+
 .close-modal
     position: absolute
     top: 5px
@@ -1361,4 +1365,7 @@ body
     text-align: center
     padding-bottom: 10px
 
+.delivery
+    @include breakpoint(large)
+        font-size: 40px
 
