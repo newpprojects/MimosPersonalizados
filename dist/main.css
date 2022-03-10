@@ -89,7 +89,7 @@ body {
   background-color: #FFEBF1;
 }
 #contactInitial div {
-  justify-content: left;
+  justify-content: center;
 }
 #contactInitial li {
   list-style: none;
@@ -101,9 +101,6 @@ body {
 @media (min-width: 768px) {
   #contactInitial {
     font-size: 25px;
-  }
-  #contactInitial div {
-    justify-content: center;
   }
   #contactInitial img {
     width: 50px;
