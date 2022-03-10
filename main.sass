@@ -85,6 +85,59 @@ body
         font-size: 85px
         margin: 70px 0 0 63px
 
+#contactInitial
+    background-color: $second
+    div
+        justify-content: left
+    li
+        list-style: none
+    img
+        width: 30px
+
+#contactInitial
+    @include breakpoint (medium)
+        font-size: 25px
+        div
+            justify-content: center
+        img
+            width: 50px
+
+#contactInitial
+    @include breakpoint (large)
+        img
+            width: 90px
+
+.titleSocial
+    color: $third
+    text-align: center
+    font-weight: bold
+    font-size: 15px
+    margin-left: 10px
+
+.titleSocial
+     @include breakpoint (medium)
+        font-size: 25px
+        margin-top: 12px
+
+.titleSocial
+     @include breakpoint (large)
+        font-size: 45px
+        margin-top: 30px
+
+.whats
+    position: fixed
+    right: 0
+
+.whats
+    @include breakpoint (medium)
+        img
+            width: 60px
+
+.whats
+    @include breakpoint (large)
+        img
+            width: 95px
+
 .headerMenu
     width: 28px
     height: 22px
